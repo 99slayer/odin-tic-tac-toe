@@ -1,0 +1,22 @@
+{
+  "name": "odin-tic-tac-toe",
+  "version": "1.0.0",
+  "description": "Game of tic-tac-toe.",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "99slayer",
+  "license": "ISC",
+  "devDependencies": {
+    "css-loader": "^7.1.2",
+    "gh-pages": "^6.3.0",
+    "html-webpack-plugin": "^5.6.3",
+    "style-loader": "^4.0.0",
+    "webpack": "^5.98.0",
+    "webpack-cli": "^6.0.1"
+  }
+}
