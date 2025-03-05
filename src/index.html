@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Odin Tic Tac Toe</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
+    <script src="index.js" defer></script>
 </head>
 <body>
     <div class="main">
@@ -15,19 +15,17 @@
             <button class="okay">OKAY</button>
         </div>
         <div class="header">
-            <h1>TIC TAC TOE</h1>
+            <h1>ODIN TIC-TAC-TOE</h1>
             <div class="buttons">
-                <!-- <button class="start">START</button> -->
-                <button class="reset" onclick="gameBoard.gameReset()">RESET</button>
+                <button class="reset">SCORE RESET</button>
             </div>
         </div>
         <div class="content">
             <div class="xplayer">
-                <h1 id="xNameDisplay">player 1 - X</h1>
+                <h1 id="xNameDisplay">X PLAYER</h1>
                 <input type="text" id="xPlayerName">
-                <!-- function to have the placeholder text become the user input? -->
-                <button id="xPlayerChangeName" onclick="displayController.updatePlayerName(xPlayerName,xPlayer)">change name</button>
-                <h2 id="xWins">WINS:0</h2>
+                <button id="xPlayerChangeName">CHANGE NAME</button>
+                <h2 id="xWins">WINS: 0</h2>
             </div>
             <div class="gridCont">
                <div class="gridCell" data-cell-number="1"><p></p></div>
@@ -41,14 +39,13 @@
                <div class="gridCell" data-cell-number="9"><p></p></div>
             </div>
             <div class="oplayer">
-                <h1 id="oNameDisplay">player 2 - O</h1>
+                <h1 id="oNameDisplay">O PLAYER</h1>
                 <input type="text" id="oPlayerName">
-                <button id="oPlayerChangeName" onclick="displayController.updatePlayerName(oPlayerName,oPlayer)">change name</button>
-                <h2 id="oWins">WINS:0</h2>
+                <button id="oPlayerChangeName">CHANGE NAME</button>
+                <h2 id="oWins">WINS: 0</h2>
             </div>
         </div>
         <div class="footer">
-            <h3>Odin Tic Tac Toe</h3>
         </div>
     </div>
 </body>
