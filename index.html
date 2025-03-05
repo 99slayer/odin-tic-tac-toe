@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odin Tic Tac Toe</title>
+    <link rel="stylesheet" href="/src/styles.css">
+    <script src="/src/script.js" defer></script>
+</head>
+<body>
+    <div class="main">
+        <div class="overlay">
+            <h1>placeholder</h1>
+            <button class="okay">OKAY</button>
+        </div>
+        <div class="header">
+            <h1>ODIN TIC-TAC-TOE</h1>
+            <div class="buttons">
+                <button class="reset" onclick="gameBoard.gameReset()">SCORE RESET</button>
+            </div>
+        </div>
+        <div class="content">
+            <div class="xplayer">
+                <h1 id="xNameDisplay">X PLAYER</h1>
+                <input type="text" id="xPlayerName">
+                <button id="xPlayerChangeName" onclick="displayController.updatePlayerName(xPlayerName,xPlayer)">CHANGE NAME</button>
+                <h2 id="xWins">WINS: 0</h2>
+            </div>
+            <div class="gridCont">
+               <div class="gridCell" data-cell-number="1"><p></p></div>
+               <div class="gridCell" data-cell-number="2"><p></p></div>
+               <div class="gridCell" data-cell-number="3"><p></p></div>
+               <div class="gridCell" data-cell-number="4"><p></p></div>
+               <div class="gridCell" data-cell-number="5"><p></p></div>
+               <div class="gridCell" data-cell-number="6"><p></p></div>
+               <div class="gridCell" data-cell-number="7"><p></p></div>
+               <div class="gridCell" data-cell-number="8"><p></p></div>
+               <div class="gridCell" data-cell-number="9"><p></p></div>
+            </div>
+            <div class="oplayer">
+                <h1 id="oNameDisplay">O PLAYER</h1>
+                <input type="text" id="oPlayerName">
+                <button id="oPlayerChangeName" onclick="displayController.updatePlayerName(oPlayerName,oPlayer)">CHANGE NAME</button>
+                <h2 id="oWins">WINS: 0</h2>
+            </div>
+        </div>
+        <div class="footer">
+        </div>
+    </div>
+</body>
+</html>
