@@ -2,6 +2,8 @@
 The classic game of Tic-Tac-Toe.\
 Checkout the live preview! 👉 [Demo](https://99slayer.github.io/odin-tic-tac-toe/)
 
+![Project image.](/public/README-1.png)
+
 ## Goals
 - Practice working with module patterns/IIFEs and factory functions in Javascript.
 
