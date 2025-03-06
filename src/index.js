@@ -16,10 +16,18 @@ const gameBoard = (() => {
 	const determinePlayer = () => {
 		if (xPlayer.turnCount <= oPlayer.turnCount) {
 			++xPlayer.turnCount
+			DOM.xTurnIndicator.classList.remove('go');
+			DOM.xTurnIndicator.classList.add('stop');
+			DOM.oTurnIndicator.classList.remove('stop');
+			DOM.oTurnIndicator.classList.add('go');
 			return xPlayer.boardMark;
 		}
 		else if (oPlayer.turnCount < xPlayer.turnCount) {
 			++oPlayer.turnCount
+			DOM.oTurnIndicator.classList.remove('go');
+			DOM.oTurnIndicator.classList.add('stop');
+			DOM.xTurnIndicator.classList.remove('stop');
+			DOM.xTurnIndicator.classList.add('go');
 			return oPlayer.boardMark;
 		};
 	};
@@ -106,10 +114,10 @@ const displayController = (() => {
 	const updatePlayerName = (input, player) => {
 		player.playerName = input.value;
 		if (player == xPlayer) {
-			DOM.xDisplay.textContent = `${player.playerName} - X`;
+			DOM.xDisplay.textContent = `X - ${player.playerName}`;
 		}
 		else if (player == oPlayer) {
-			DOM.oDisplay.textContent = `${player.playerName} - O`;
+			DOM.oDisplay.textContent = `O - ${player.playerName}`;
 		};
 		input.value = '';
 	};

@@ -11,6 +11,8 @@ const DOM = {
 	oDisplay: document.querySelector('#oNameDisplay'),
 	xPlayerName: document.querySelector('#xPlayerName'),
 	oPlayerName: document.querySelector('#oPlayerName'),
+	xTurnIndicator: document.querySelector('.xTurnIndicator'),
+	oTurnIndicator: document.querySelector('.oTurnIndicator'),
 	xChangeName: document.querySelector('#xPlayerChangeName'),
 	oChangeName: document.querySelector('#oPlayerChangeName'),
 }
